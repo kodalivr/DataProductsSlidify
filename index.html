@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Devloping Data Products Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Devloping Data Products Project">
+  <meta name="author" content="Venkat Kodali">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Devloping Data Products Project</h1>
+    <h2>The relationship between variables and MPG</h2>
+    <p>Venkat Kodali<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is a simple Shiny app to show the relationship between variable and miles per gallon (MPG).</p>
+
+<p>The app uses mtcars dataset.</p>
+
+<p>In this application  the user can choose the variable and plot will show the relationship of the selected variable to MPG. The app also has a radio button to choose the color of Boxplot.</p>
+
+<p>Shiny server link: <a href="https://kodalivr.shinyapps.io/Project">https://kodalivr.shinyapps.io/Project</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Application Help</h2>
+  </hgroup>
+  <article data-timings="">
+    <h1>How to use the application</h1>
+
+<p>The following options are avialable in the application to show relationship with MPG. </p>
+
+<h1>1. variable</h1>
+
+<pre><code> 1.  Number of cylinders          2.  Displacement (cu.in.)
+ 3.  Gross horsepower             4.  Rear axle ratio
+ 5.  Weight (lb/1000)             6.  1/4 mile time
+ 7.  V/S                          8.  Transmission
+ 9.  Number of forward gears      10. Number of carburetors
+</code></pre>
+
+<h1>2. Show BoxPlot&#39;s outlines</h1>
+
+<h1>3. Boxtop Color</h1>
+
+<p>There is a tab for displaying BoxPlot or Regression Model.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Sample Code snippet</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">#     selectInput(&quot;variable&quot;, &quot;Variable:&quot;,
+#                  c(&quot;Number of cylinders&quot; = &quot;cyl&quot;,
+#                 &quot;Displacement (cu.in.)&quot; = &quot;disp&quot;,
+#                 &quot;Gross horsepower&quot; = &quot;hp&quot;,
+#                 &quot;Rear axle ratio&quot; = &quot;drat&quot;,
+#                 &quot;Weight (lb/1000)&quot; = &quot;wt&quot;,
+#                 &quot;1/4 mile time&quot; = &quot;qsec&quot;,
+#                 &quot;V/S&quot; = &quot;vs&quot;,
+#                 &quot;Transmission&quot; = &quot;am&quot;,
+#                 &quot;Number of forward gears&quot; = &quot;gear&quot;,
+#                 &quot;Number of carburetors&quot; = &quot;carb&quot;
+#                 )),
+#     checkboxInput(&quot;outliers&quot;, &quot;Show BoxPlot&#39;s outliers&quot;, FALSE),
+#     radioButtons(&quot;colors&quot;,&quot;Boxplot Color:&quot;,c(&quot;Red&quot; = &quot;red&quot;, &quot;Blue&quot; = &quot;blue&quot;))
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This project deals with creating a simple Shiny application with little documentation that easily make anyone to use the application. Then created 5 slides (inclusive of the title slide)  to pitch the app. Create a web page using Slidify.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Application Help'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Sample Code snippet'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
